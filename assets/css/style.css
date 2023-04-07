@@ -1,0 +1,553 @@
+/* Imporation de la police d'écriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --bk: #0B0C2A;
+}
+
+
+/* déclaration du  box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+
+/* basis */
+
+
+/* title */
+
+h2{
+    color: white;
+    font-size: 2vw;
+    margin: 2.5vw 0 0 0;
+    font-family: 'Oswald', sans-serif;
+    transition: 2s;
+}
+
+#title{
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0 0 10vw;
+    font-family: 'Oswald', sans-serif;
+    transition: 2s;
+    text-shadow: 5px 5px 5px #000;
+}
+
+#slider__description{
+    margin: 0 0 3.5vw 0;
+    padding: 0;
+    color: white;
+    text-shadow: 5px 5px 5px #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1vw;
+    transition: 2s;
+}
+
+.slider__container__text a span{
+    font-size: 0.6vw;
+    color: #ffffff;
+    background: #e53637;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 4px 0 0 4px;
+    margin-right: 5px;
+
+}
+
+.slider__container__text a i {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background: #e53637;
+    padding: 10px 5px;
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+}
+
+a{
+        text-decoration: none;
+}
+
+#watch{
+    display: flex;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    background-color: var(--bk);
+}
+
+/* Application de la police d'écriture sur toute la page */
+
+html {
+    padding: 0;
+    font-family: "Lato";
+}
+ /* main création du contenaire */
+
+/* Application d'une couleur de fond a bare de navigation */
+
+header {
+    position: relative;
+    background-color: #070720;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 95px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 30vw;
+    max-width: 250px;
+}
+/* Application d'un display flex pour mettre les items Horizontalement */
+
+
+.list__items {
+    margin: 0;
+    display: flex;
+    gap: 3vw;
+}   
+
+/* Application d'un display flex sur les items, les centre, ajoute une marge gauche pour espacer les items et enlève les points des liens*/
+
+.items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/* Application d'une couleur noir sur les liens et enlève les bare sous les textes */
+
+.items__link {
+    position: relative;
+    font-size: 0.8vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    color: lightgrey;
+    transition: color .3s;
+} 
+
+/* Animation sur le texte en passant la souris dessus*/
+
+.items__link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: -15%;
+    left: 0;
+    transition: .5s width;
+}
+
+.items__link:hover {
+    color: white;
+}
+
+.items__link:hover::after {
+    width: 100%;
+}
+
+.list_items-right {
+    display: flex;
+    gap: 20px;
+}
+
+.inline{
+    display: flex;
+}
+
+#search {
+    color: white;
+    transform: scaleX(-1);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#account {
+    color: white;
+    font-size: 15px;
+}
+
+main{
+    width: 60%;
+    margin: 5vh auto;
+ }
+
+#slider{
+    position: relative;
+    background-image: url("../videos/zoom100.mp4");
+    background-size: 120%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    padding: 16% 3vw;
+}
+
+.slider__text {
+    text-shadow: 5px 5px 5px #000;
+}
+
+.arrow_carrot-right{
+    transform: rotate(-45deg);
+    display: block;
+    
+}
+
+
+
+.owl-prev, .owl-next{
+    height: 66px;
+    width: 66px;
+    background: #151634;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 1;  
+    top: 37%;
+    border: var(--bk) 5px solid;
+    font-size: 25px;
+    padding: 0;
+} 
+
+.owl-prev:hover {
+    animation: prev 4s infinite;
+    cursor: pointer;
+}
+
+.owl-next:hover{
+    animation: next 4s infinite;
+    cursor: pointer;
+}
+
+.owl-prev{
+    left: -84px;
+    }
+
+.owl-next {
+    right: -84px;
+}
+
+
+
+.arrow_carrot-left{
+    transform: rotate(-45deg);
+    display: block;
+}
+
+/* Catalogue */
+
+.catalog {
+    margin: 5vh 0 0 0;
+    display: flex;
+}
+
+
+.slider__container__text{
+    padding: -2vw 0;
+}
+
+/* Catalogue partie gauche */
+
+.catalog--left {
+    width: 77%;
+}
+
+.catalog__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 0 5% 0;
+}
+
+.catalog__border--left {
+    position: absolute;
+    height: 5vh;
+    border-left: 5px solid red;
+}
+
+.catalog__info__viewall a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: white;
+}
+
+/* Catalogue partie droite */
+
+.catalog--right {
+    width: 20%;
+}
+
+.catalog__info__title h2 {
+    text-shadow: 1px 1px 1px #000;
+    margin:  0 0 0 2vh;
+}
+
+/* Anime du catalogue */
+
+.catalog__list__anime {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime:hover{
+    cursor: pointer;
+}
+
+.anime__img {
+    border: 3px none solid;
+    border-radius: 10px;
+    height: 350;
+    width: 270px;
+}
+
+.container__anime__categorie {
+    display: flex;
+    gap: 1vh;
+}
+
+.anime__categorie {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 1px 10px;
+    font-size: 13px;
+    text-align: center;
+    width: 20%;
+    color: white; 
+}
+
+.anime__title {
+    margin: 0 0 0 0;
+    font-size: 20px;
+    color: white;
+}
+
+.slider__categorie{
+    display: inline;
+    padding: 0.2vw 0.5vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
+    color: #554476;
+}
+
+
+/* les animation */
+
+@keyframes next {
+
+    50%{
+        right: -94px;
+    }
+
+    75%{ 
+        right: -84px;
+    }
+
+}
+
+@keyframes prev {
+
+    50%{
+        left: -94px;
+    }
+    75%{
+        left: -84px;
+    }
+
+}
+
+
+
+
+
+#slider {
+    position: relative;
+    height: 30vw; /* ajustez la hauteur selon vos besoins */
+  }
+  
+  #slider__video {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* permet de couvrir toute la surface sans déformation */
+    
+  }
+  
+  .slider__container__text {
+    position: relative;
+    z-index: 999; /* empêche le texte d'être caché derrière la vidéo */
+  }
+  
+
+/* btn sound */
+.sound_btn{
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-shadow: #000 5px 5px 5px;
+    padding: 0.6vw;
+    position: absolute;
+    margin: -3% 100%;
+}
+.sound_btn:hover{
+    cursor: pointer;
+}
+
+
+/* img presantation */
+
+.container {
+    display: flex;
+    width: 100%;
+    
+  }
+  
+  .block--left {
+    width: 50%;
+    height: 200px;
+    
+  }
+  
+  .block--right {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
+    
+  }
+
+  .img__info{
+    width: 100%;
+  }
+
+  .h3__info{
+    color: white;
+    font-size: 2vw;
+  }
+
+  .p__info{
+    color: rgb(160, 160, 160);
+    font-size: 1vw;
+    
+  }
+
+  .p__saison{
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+/* img des serie au click */
+
+.container__series {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.align__box {
+    /* Set a fixed width for each block */
+    display: flex;
+    flex-direction: column; /* Position the text above the image */
+    align-items: center; /* Center the items horizontally */
+    margin: 0 1vw 0 0;
+}
+
+
+.p__serie_click {
+    margin-top: 10px; /* Add some spacing between the text and image */
+    text-align: center; /* Center the text horizontally */
+    color: white;
+}
+
+/* animation */
+
+.wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .my-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .wall {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: 9999999;
+    background-color: var(--bk);
+    transform-origin: center;
+  }
+  
+  .left {
+    left: 0;
+    transform: scaleX(1);
+    animation: open-left 1s ease-in-out forwards;
+  }
+  
+  .right {
+    right: 0;
+    transform: scaleX(1);
+    animation: open-right 1s ease-in-out forwards;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes open-left {
+    from {
+        width: 70%;
+    }
+    to {
+        width: 0%;
+    }
+  }
+  
+  @keyframes open-right {
+    from {
+        width: 70%;
+    }
+    to {
+        width: 0%;
+    }
+  }
+  
+  .start-image.fade-out {
+    opacity: 0;
+  }
+  
+  

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Purple Stream">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Purple Stream</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="my-container">
+          <div class="wall left"></div>
+          <div class="wall right"></div>
+          <div class="content">
+                <!-- Contenu de la page ici -->
+
+
+                <header>
+                    <div class="header-left">
+                        <a href="index.html"><img src="./assets/img/logo.png" alt="logo-purple-stream"
+                                class="header__logo"> </a>
+                        <nav class="navbar">
+                            <ul class="list__items">
+                                <li class="items"><a href="#" class="items__link">ANIME VOSTFR</a></li>
+                                <li class="items"><a href="#" class="items__link">ANIME VF</a></li>
+                                <li class="items"><a href="#" class="items__link">ANIME PRIMTEMPS 2023</a></li>
+                                <li class="items"><a href="#" class="items__link">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <ul class="list_items-right">
+                        <li class="items"><i class="fa-solid fa-magnifying-glass" id="search"></i></li>
+                        <li class="items"><i class="fa-solid fa-user" id="account"></i></li>
+                    </ul>
+                </header>
+                <main>
+                    <div id="slider">
+                        <video autoplay muted loop id="slider__video">
+                            <source src="assets/videos/zoom100.mp4" type="video/mp4">
+                        </video>
+                        <div class="slider__container__text">
+                            <button class="sound_btn" id="sound-btn-active" onclick="toggleSound()"><i
+                                    class="fa-solid fa-volume-high"></i></button>
+                            <button class="sound_btn" id="sound-btn-stop" onclick="toggleSound()"><i
+                                    class="fa-solid fa-volume-xmark"></i></button>
+                            <p class="slider__categorie">Horreur | Comedie</p>
+                            <button type="button" class="owl-prev">
+                                <span class="arrow_carrot-left"><i class="fa-solid fa-arrow-left"></i></span>
+                            </button>
+                            <button type="button" class="owl-next">
+                                <span class="arrow_carrot-right"><i class="fa-solid fa-arrow-right"></i></span>
+                            </button>
+                            <div id="inline__text">
+                                <h2 class="slider__text">Zoom 100:</h2><span id="title">Bucket list of the dead</span>
+                            </div>
+                            <p id="slider__description">Il à bien 100 objectifs à atteindre...</p>
+                            <div class="inline">
+                                <a id="watch" href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catalogue  -->
+
+                    <div class="catalog">
+                        <div class="catalog--left">
+                            <div class="catalog__info">
+                                <div class="catalog__info__title">
+                                    <div class="catalog__border--left"></div>
+                                    <h2>TENDANCE ACTUELLE</h2>
+                                </div>
+                                <div class="catalog__info__viewall">
+                                    <p><a href="#">VIEW ALL →</a></p>
+                                </div>
+                            </div>
+                            <div class="catalog__list__anime">
+                                <div class="anime">
+                                    <img src="/assets/img/serie/demon-slayer.jpg" alt="boruto" class="anime__img">
+                                    <div class="container__anime__categorie">
+                                        <p class="anime__categorie">Active</p>
+                                        <p class="anime__categorie">Movie</p>
+                                    </div>
+                                    <p class="anime__title">Boruto: Naruto Next Generations</p>
+                                </div>
+                                <div class="anime">
+                                    <img src="/assets/img/serie/boruto.png" alt="boruto" class="anime__img">
+                                    <div class="container__anime__categorie">
+                                        <p class="anime__categorie">Active</p>
+                                        <p class="anime__categorie">Movie</p>
+                                    </div>
+                                    <p class="anime__title">Boruto: Naruto Next Generations</p>
+                                </div>
+                                <div class="anime">
+                                    <img src="/assets/img/serie/boruto.png" alt="boruto" class="anime__img">
+                                    <div class="container__anime__categorie">
+                                        <p class="anime__categorie">Active</p>
+                                        <p class="anime__categorie">Movie</p>
+                                    </div>
+                                    <p class="anime__title">Boruto: Naruto Next Generations</p>
+                                </div>
+                                <div class="anime">
+                                    <img src="/assets/img/serie/boruto.png" alt="boruto" class="anime__img">
+                                    <div class="container__anime__categorie">
+                                        <p class="anime__categorie">Active</p>
+                                        <p class="anime__categorie">Movie</p>
+                                    </div>
+                                    <p class="anime__title">Boruto: Naruto Next Generations</p>
+                                </div>
+                                <div class="anime">
+                                    <img src="/assets/img/serie/boruto.png" alt="boruto" class="anime__img">
+                                    <div class="container__anime__categorie">
+                                        <p class="anime__categorie">Active</p>
+                                        <p class="anime__categorie">Movie</p>
+                                    </div>
+                                    <p class="anime__title">Boruto: Naruto Next Generations</p>
+                                </div>
+                                <div class="anime">
+                                    <img src="/assets/img/serie/boruto.png" alt="boruto" class="anime__img">
+                                    <div class="container__anime__categorie">
+                                        <p class="anime__categorie">Active</p>
+                                        <p class="anime__categorie">Movie</p>
+                                    </div>
+                                    <p class="anime__title">Boruto: Naruto Next Generations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog--right">
+
+                        </div>
+                    </div>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/428ecd0230.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/serie.js"></script>
+
+</body>
+
+</html>
